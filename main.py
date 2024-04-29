@@ -97,7 +97,7 @@ def main():
             st.line_chart(seasonal_trend)
 
         # Histogram of Seasonal Trends
-        st.subheader('Histogram of Seasonal Trends') 
+        st.subheader('Histogram of Seasonal Trends')
         for kw in kw_list:
             seasonal_trend = data_over_time[kw].groupby(data_over_time.index.month).mean()
             st.write(f'Keyword: {kw}')
